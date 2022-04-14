@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./slider.css">
+    <title>RANGE-SLIDER</title>
+</head>
+<body>
+    <div class="range__wrapper">
+        <div class="range-text">
+            <h3 class="range-title">диапазон цены</h3>
+            <div class="range__score">
+                <p class="score-min">5 000</p> 
+                <p class="score__svg"> 
+                    <img src="./currency_ruble_black_24dp.svg" alt="">
+                </p>
+                <p>-</p> 
+                <p class="score-max">15 000</p> 
+                <p class="score__svg"> 
+                    <img src="./currency_ruble_black_24dp.svg" alt="">
+                </p> 
+            </div>
+        </div>
+        <div class="range-content">
+            <div class="slider-range"></div>
+        </div>
+        <div class="range__input">
+            <input type="range" class="range-min" value="5000" min="0" max="20000">
+            <input type="range" class="range-max" value="15000" min="0" max="20000">
+        </div>
+        <p class="coin">Стоимость за сутки пребывания в номере</p>
+    </div>
+    <script src="./slider.js"></script>
+</body>
+</html>
